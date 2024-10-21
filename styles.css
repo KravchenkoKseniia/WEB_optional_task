@@ -1,0 +1,129 @@
+﻿body {
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input {
+    border-radius: 6px;
+    display: block;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+button {
+    border-radius: 6px;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.joke-div {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.quote::before {
+    content: "-";
+}
+
+@media screen and (max-width: 940px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    input {
+        width: 150px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+
+    .joke-div {
+        max-width: 550px;
+    }
+
+    .joke-div p {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    input {
+        width: 100px;
+    }
+
+    button {
+        padding: 10px 10px;
+    }
+
+    .joke-div {
+        max-width: 350px;
+    }
+
+    .joke-div p {
+        font-size: 12px
+    }
+}
+
+@media screen and (max-width: 300px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    input {
+        max-width: 80px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+
+    .joke-div {
+        margin: 5px auto;
+        max-width: 250px;
+    }
+
+    .joke-div p {
+        font-size: 10px
+    }
+}
